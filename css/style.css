@@ -1,0 +1,87 @@
+/* Empty. Add your own CSS if you like */
+
+/* Empty. Add your own CSS if you like */
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png');
+}
+
+.star>.item-content {
+  background-color: #EEE8D6 !important;
+}
+
+.splash {
+  background: url(../img/gallery.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.branding  {
+  width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 150px;
+  color: black !important;
+  text-align: center;
+}
+.ion-ios-home{
+  color: red !important;
+}
+.ion-ios-rose{
+  color: red !important;
+}
+
+.ion-bonfire{
+  color: red !important;
+}
+
+.ion-beer{
+  color: red !important;
+}
+.ion-bowtie{
+  color: red !important;
+}
+
+
+.tagline {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.branding p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.item-divider {
+  background-color: #EEE8D6;
+}
+
+.bar-positive, .tabs-positive>.tabs {
+  background-color: #417D9A !important;
+  border-color:  #417D9A;
+}
+
+.item-thumbnail-left img {
+  border-radius: 10px;
+}
+
+.item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #417D9A;
+}
+
+.dayhighlight {
+  background-color: #9EC6DE;
+  border-top: 20px solid #417D9A;
+}
+
+.dayhighlight h2 {
+  color: #417D9A;
+  font-size: 2rem;
+  font-weight: 200;
+}
