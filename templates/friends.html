@@ -1,19 +1,43 @@
 <ion-view view-title="Friends">
+<ion-nav-buttons side="secondary" >
+      <button class="button button-icon ion-plus-circled"
+              ng-click="addPicture()" >
+      </button >
+  </ion-nav-buttons >
   <ion-content>
-  <div class="list">
+  <div class="list list-inset">
+    <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+    </label>
     <a class="item item-avatar" href="#">
-      <img src="venkman.jpg">
+      <img src="img/d11.jpg">
       <h2>Kofi Boakye</h2>
       <p>Back off, man. I'm a scientist.</p>
     </a>
     <a class="item item-avatar" href="#">
-      <img src="venkman.jpg">
-      <h2>Boya Lingo</h2>
+      <img src="img/d12.jpg">
+      <h2>Boya </h2>
+      <p>Going for movies</p>
+    </a>
+    <a class="item item-avatar" href="#">
+      <img src="img/d13.jpg">
+      <h2>Isaac</h2>
+      <p>Going for movies</p>
+    </a>
+    <a class="item item-avatar" href="#">
+      <img src="img/d14.jpg">
+      <h2>Eric </h2>
+      <p>Going for movies</p>
+    </a>
+    <a class="item item-avatar" href="#">
+      <img src="img/d15.jpg">
+      <h2>Mary</h2>
       <p>Going for movies</p>
     </a>
   </div>
 </ion-view>
-<div class="bar bar-footer bar-balanced">
+<div class="bar bar-footer bar-assertive">
   <button class="button icon-left ion-ios-camera-outline button-positive"> SCAN</button>
   
   <button class="button icon-left ion-ios-barcode-outline button-positive"> SHARE</button>

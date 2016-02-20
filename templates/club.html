@@ -1,22 +1,34 @@
 <ion-view view-title="Club">
+<ion-nav-buttons side="secondary" >
+      <button class="button button-icon ion-camera"
+              ng-click="addPicture()" >
+      </button >
+  </ion-nav-buttons >
   <ion-content>
-    <div class="list">
+    <div class="list card">
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="../img/gallery.jpg">
-      <h2>Color = red</h2>
-      <h2>Type = dress</h2>
-      <h2>Count = 6</h2>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="../img/skyline.jpg">
-      <h2>Color = red</h2>
-      <h2>Type = dress</h2>
-      <h2>Count = 6</h2>
-    </a>
+  <div class="item item-avatar">
+    <img src="img/d6.jpg">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="img/d5.jpg">
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
 </div>
 </ion-view>
-<div class="bar bar-footer bar-balanced">
+<div class="bar bar-footer bar-assertive">
   <button class="button icon-left ion-ios-camera-outline button-positive"> SCAN</button>
   
   <button class="button icon-left ion-ios-barcode-outline button-positive"> SHARE</button>

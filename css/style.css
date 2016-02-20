@@ -28,20 +28,29 @@ body {
 }
 .ion-ios-home{
   color: red !important;
+  font-size:20px;
 }
 .ion-ios-rose{
   color: red !important;
+  font-size:20px;
 }
 
 .ion-bonfire{
   color: red !important;
+  font-size:20px;
 }
 
 .ion-beer{
   color: red !important;
+  font-size:20px;
 }
 .ion-bowtie{
   color: red !important;
+  font-size:20px;
+}
+.ion-plus{
+  color: red !important;
+  font-size:20px;
 }
 
 

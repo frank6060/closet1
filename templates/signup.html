@@ -1,19 +1,15 @@
-<ion-view view-title="Account" >
+<!-- Standard -->
 
-
-	<ion-nav-buttons side="secondary" >
-			<button class="button button-icon ion-log-out"
-			        ng-click="addPicture()" >
-			</button >
-	</ion-nav-buttons >
-
-
+<ion-view view-title="Signup"
+          hide-back-button="true" >
 	<ion-content padding="true"
 	             scroll="false" >
+
+		<!-- Form with floating labels -->
 		<form name="signupForm"
-		      novalidate=""
-		      ng-submit="submit(signupForm)" >
-			<ion-list class="list list-inset">
+		      novalidate="novalidate"
+		      ng-submit="signup(signupForm)" >
+			<ion-list >
 
 				<label class="item item-input item-floating-label"
 				       ng-class="{'has-error':signupForm.name.$invalid}" >
@@ -38,24 +34,43 @@
 					       ng-model="formData.email"
 					       ng-required="true" >
 				</label >
-				<label class="item item-input item-floating-label"
-				       ng-class="{'has-error':signupForm.email.$invalid}" >
-					<span class="input-label" >Password</span >
-					<input type="email"
-					       placeholder="Password"
-					       name="email"
-					       ng-model="formData.email"
-					       ng-required="true" >
-				</label >
 				<div class="form-errors"
 				     ng-messages="signupForm.email.$error"
 				     ng-messages-include="templates/form-errors.html" >
 				</div >
 
+
+				<label class="item item-input item-floating-label"
+				       ng-class="{'has-error':signupForm.password.$invalid}" >
+					<span class="input-label" >Password</span >
+					<input type="password"
+					       placeholder="Password"
+					       name="password"
+					       ng-model="formData.password"
+					       ng-required="true"
+					       ng-minlength="6" >
+				</label >
+				<div class="form-errors"
+				     ng-messages="signupForm.password.$error"
+				     ng-messages-include="templates/form-errors.html" >
+					<div class="form-error"
+					     ng-message="minlength" >Password too short
+					</div >
+				</div >
+
+
 			</ion-list >
-			<button class="button button-positive button-block"
-			        type="submit" >Save
+			<button class="button button-royal button-block"
+			        type="submit" >Sign up
 			</button >
 		</form >
+
+		<p class="text-center" >
+			Already have an account?
+			<a nav-direction="exit"
+			   ui-sref="login" >Login
+			</a >
+		</p >
+
 	</ion-content >
 </ion-view >

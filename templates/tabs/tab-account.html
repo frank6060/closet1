@@ -2,9 +2,9 @@
 
 
 	<ion-nav-buttons side="secondary" >
-			<button class="button button-icon ion-log-out"
-			        ng-click="addPicture()" >
-			</button >
+		<button class="button button-clear"
+		        ng-click="logout()" >Logout
+		</button >
 	</ion-nav-buttons >
 
 
@@ -13,7 +13,7 @@
 		<form name="signupForm"
 		      novalidate=""
 		      ng-submit="submit(signupForm)" >
-			<ion-list class="list list-inset">
+			<ion-list >
 
 				<label class="item item-input item-floating-label"
 				       ng-class="{'has-error':signupForm.name.$invalid}" >
@@ -38,22 +38,13 @@
 					       ng-model="formData.email"
 					       ng-required="true" >
 				</label >
-				<label class="item item-input item-floating-label"
-				       ng-class="{'has-error':signupForm.email.$invalid}" >
-					<span class="input-label" >Password</span >
-					<input type="email"
-					       placeholder="Password"
-					       name="email"
-					       ng-model="formData.email"
-					       ng-required="true" >
-				</label >
 				<div class="form-errors"
 				     ng-messages="signupForm.email.$error"
 				     ng-messages-include="templates/form-errors.html" >
 				</div >
 
 			</ion-list >
-			<button class="button button-positive button-block"
+			<button class="button button-royal button-block"
 			        type="submit" >Save
 			</button >
 		</form >

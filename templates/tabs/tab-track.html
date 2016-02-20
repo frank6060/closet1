@@ -1,4 +1,4 @@
-<ion-view view-title="Track Pictures" >
+<ion-view view-title="Track Meal" >
 
 	<ion-nav-buttons side="secondary" >
 			<button class="button button-icon ion-camera"
@@ -11,7 +11,7 @@
 		      novalidate=""
 		      ng-submit="trackMeal(createForm)"
 		      class="create-form" >
-			<ion-list class="list list-inset">
+			<ion-list >
 
 				<!-- Title -->
 				<label class="item item-input item-stacked-label"
@@ -40,36 +40,9 @@
 						<option selected
 						        value="" >Please Choose
 						</option >
-						<option value="birthday" >Birthday</option >
-						<option value="party" >Party</option >
-						<option value="office" >Office</option >
-					</select >
-				</label >
-				<div class="form-errors"
-				     ng-messages="createForm.category.$error"
-				     ng-messages-include="templates/form-errors.html" >
-				</div >
-
-
-				<!-- Color -->
-				<label class="item item-input item-select"
-				       ng-class="{'has-error':createForm.category.$invalid}" >
-					<div class="input-label" >
-						Color
-					</div >
-					<select name="category"
-					        ng-model="formData.category"
-					        ng-required="true" >
-						<option selected
-						        value="" >Please Choose
-						</option >
-						<option value="birthday" >Red</option >
-						<option value="party" >Green</option >
-						<option value="office" >Pink</option >
-						<option value="office" >Black</option >
-						<option value="office" >White</option >
-						<option value="office" >Blue</option >
-						<option value="office" >Yellow</option >	
+						<option value="snack" >Snack</option >
+						<option value="meal" >Meal</option >
+						<option value="drink" >Drink</option >
 					</select >
 				</label >
 				<div class="form-errors"
@@ -80,9 +53,9 @@
 				<!-- Price -->
 				<label class="item item-input item-stacked-label"
 				       ng-class="{'has-error':createForm.price.$invalid}" >
-					<span class="input-label" >Size
+					<span class="input-label" >Calories
 					</span >
-					<span class="calories" >{{formData.calories}}LW</span >
+					<span class="calories" >{{formData.calories}}cal</span >
 
 					<div class="range range-royal" >
 						<input type="range"
